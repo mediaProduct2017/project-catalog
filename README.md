@@ -13,7 +13,7 @@
 ### [训练狗的网站用户付费预测](https://github.com/mediaProduct2017/dataAnalysis)
 首先需要对数据做预处理，然后是数据仓库的构建，最后才是数学建模
 
-## 文章
+## 文章与笔记
 
 ### [关于神经网络模型](https://github.com/mediaProduct2017/learn_NeuralNet)
 The repository中有例子：
@@ -78,4 +78,4 @@ Sentiment_RNN_Solution.ipynb
 ## Projects
 
 
-## Articles
+## Articles and notes
