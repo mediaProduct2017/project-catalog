@@ -5,7 +5,10 @@
 ## 项目
 
 ### [文本分类](https://github.com/mediaProduct2017/topic-classifier)
-用的是基于KNN和EMD的一个机器学习算法，论文发表于2015年，在长文本分类方面相对其他算法有优势
+用的是基于KNN思想和EMD测度的一个机器学习算法，论文发表于2015年，训练所需的时间少，在长文本分类方面相对其他算法有优势。Reddit data的5个类别的分类，正确率在60-70%
+
+### [图像识别](https://github.com/mediaProduct2017/image-classification)
+使用基本的CNN进行图片分类与识别（10个类别），正确率接近70%，数据来源是CIFAR-10 dataset
 
 ### [共享单车使用预测](https://github.com/mediaProduct2017/bike-rentals)
 用的是一个简单的neural network, a fully connected network，output layer使用$f(x)=x$做activation
