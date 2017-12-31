@@ -10,19 +10,27 @@
 ### [图像识别](https://github.com/mediaProduct2017/image-classification)
 使用基本的CNN进行图片分类与识别（10个类别），正确率接近70%，数据来源是CIFAR-10 dataset
 
+### [文本生成器](https://github.com/mediaProduct2017/tv-script-decoder)
+LSTM decoder
+
 ### [共享单车使用预测](https://github.com/mediaProduct2017/bike-rentals)
 用的是一个简单的neural network, a fully connected network，output layer使用$f(x)=x$做activation
 
 ### [训练狗的网站用户付费预测](https://github.com/mediaProduct2017/dataAnalysis)
 首先需要对数据做预处理，然后是数据仓库的构建，最后才是数学建模
 
-### 工业级别：Redis缓存，以及从Redis到Mysql的数据转移
+### redis_mysql_deco: Redis缓存，以及从Redis到Mysql的数据转移（工业级别）
 
-### 以词为特征的文本分类（语义分析）神经网络模型：使用jieba的限定词性的关键词提取方法
+### MLP_model_deco: 以词为特征的文本分类（语义分析）神经网络模型：使用jieba的限定词性的关键词提取方法
 
-### 以词为特征的文本分类（语义分析）神经网络模型：句法分析加词性限定挑选特征词
+### syntac_model_deco: 以词为特征的文本分类（语义分析）神经网络模型：句法分析加词性限定挑选特征词
 
-### 自然语言转换为sparql语言（句法分析）：句法树规则，对应图结构表达式
+### nl2spar_deco: 自然语言转换为sparql语言（句法分析）：句法树规则，对应图结构表达式
+
+### parse_tree: 可用于自我学习“自然语言转换为sparql语言”的句法树向量，可作为机器学习模型的特征之一
+
+### 基于语义的特定模板之句法规则，用于把自然语言转化为sql查询语言
+
 
 ## 文章与笔记
 
