@@ -28,7 +28,7 @@ Idea is cheap, show me the code.
 
 #### 基于语义的特定模板之句法规则，用于把自然语言转化为sql查询语言
 
-### (4) 短文本中的关系抽取
+### (4) 短文本中的关系抽取、推理式关系抽取，知识图谱中的推理
 
 ### (5) 实体抽取
 
@@ -36,6 +36,12 @@ Idea is cheap, show me the code.
 
 #### [文本生成器](https://github.com/mediaProduct2017/tv-script-decoder)
 LSTM decoder
+
+#### [机器翻译](https://github.com/mediaProduct2017/language-translation-seq2seq)
+Seq2seq model
+
+#### [图片生成](https://github.com/mediaProduct2017/face-generation-GAN)
+GAN model
 
 ### (7) 词向量、句向量的生成与评测
 
@@ -114,14 +120,14 @@ Sentiment_RNN_Solution.ipynb
 
 [KB-InfoBot: A dialogue bot for information access](https://github.com/MiuLab/KB-InfoBot)
 
-### (7) 词向量、句向量的生成与评测
-
-#### [关于word2vec](https://github.com/mediaProduct2017/learn-word2vec)
-
 ### (5) 实体抽取
 
 #### [word window的分类](https://github.com/mediaProduct2017/learn-WordWindow)
 有很多实际问题都是word window的分类问题，比如词性判断、实体识别等
+
+### (7) 词向量、句向量的生成与评测
+
+#### [关于word2vec](https://github.com/mediaProduct2017/learn-word2vec)
 
 
 ## 2. English part
