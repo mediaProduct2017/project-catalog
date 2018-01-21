@@ -14,7 +14,7 @@ Idea is cheap, show me the code.
 #### [图像识别](https://github.com/mediaProduct2017/image-classification)
 使用基本的CNN进行图片分类与识别（10个类别），正确率接近70%，数据来源是CIFAR-10 dataset
 
-#### MLP_model_deco: 以词为特征的文本分类（语义分析）神经网络模型：使用jieba的限定词性的关键词提取方法
+#### MLP_model_deco, mlp_model_new: 以词为特征的文本分类（语义分析）神经网络模型：使用jieba的限定词性的关键词提取方法
 
 #### syntac_model_deco: 以词为特征的文本分类（语义分析）神经网络模型：句法分析加词性限定挑选特征词
 
@@ -22,11 +22,17 @@ Idea is cheap, show me the code.
 
 ### (3) 自然语言问句转换为sparql等查询语言、自然语言问句转换为entity和attribute意图
 
-#### nl2spar_deco: 自然语言转换为sparql语言（句法分析）：句法树规则，对应图结构表达式
+#### nl2spar_deco, develop_deco, realse_knowledge_graph_temp: 自然语言转换为sparql语言（句法分析）：句法树规则，对应图结构表达式
+问题类与句法模板类的交互（复杂的地方）
+
+从句法模板到图结构表达式（创新点）
+
+从图结构表达式到sparql语句（quepy的创新点）
 
 #### parse_tree: 可用于自我学习“自然语言转换为sparql语言”的句法树向量，可作为机器学习模型的特征之一
 
 #### 基于语义的特定模板之句法规则，用于把自然语言转化为sql查询语言
+句法模板，把一句话转变为另一句话，即同义自然语言句子之间的转换
 
 ### (4) 短文本中的关系抽取、推理式关系抽取，知识图谱中的推理
 
@@ -62,6 +68,7 @@ GAN model
 #### [logs-analysis](https://github.com/mediaProduct2017/logs-analysis)
 
 #### redis_mysql_deco: Redis缓存，以及从Redis到Mysql的数据转移（工业级别）
+主要是注意降低网络操作的频率，包括建立网络连接，查询数据库等crud操作(create, read, update, delete)
 
 ### (11) 数据爬虫
 
@@ -90,6 +97,8 @@ hdr.py
 使用简单的neural net来做模型，MNIST dataset，手写数字识别
 
 第二个例子
+
+神经网络模型用于连续变量预测
 
 [共享单车使用预测](https://github.com/mediaProduct2017/bike-rentals)
 
