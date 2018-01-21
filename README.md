@@ -67,6 +67,12 @@ GAN model
 
 #### [Download news data by a web crawler for reading](https://github.com/mediaProduct2017/reading)
 
+### (17) web开发
+
+#### [前端开发](https://github.com/mediaProduct2017/portfolio_site)
+
+#### [后端开发](https://github.com/mediaProduct2017/item-catalog)
+
 
 ## 文章与笔记
 
@@ -161,6 +167,12 @@ conda, git, jupyter notebook, pycharm
 ### (16) 并行编程
 
 #### [learn-ParallelProgram](https://github.com/mediaProduct2017/learn-ParallelProgram)
+
+### (18) 分布式系统
+
+### (19) 统计学
+
+### (20) 数据可视化
 
 
 ## 2. English part
