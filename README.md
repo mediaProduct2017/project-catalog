@@ -55,14 +55,24 @@ GAN model
 #### [训练狗的网站用户付费概率预测](https://github.com/mediaProduct2017/dataAnalysis)
 首先需要对数据做预处理，然后是数据仓库的构建，最后才是数学建模
 
+#### [中文文本预处理及词云分析](https://github.com/mediaProduct2017/text-reco)
+
 ### (10) 数据库的使用
 
+#### [logs-analysis](https://github.com/mediaProduct2017/logs-analysis)
+
 #### redis_mysql_deco: Redis缓存，以及从Redis到Mysql的数据转移（工业级别）
+
+### (11) 数据爬虫
+
+#### [Download news data by a web crawler for reading](https://github.com/mediaProduct2017/reading)
 
 
 ## 文章与笔记
 
 ### (1) 句子与文本分类
+
+#### [text-classification](https://github.com/mediaProduct2017/text-classification)
 
 #### [关于神经网络模型](https://github.com/mediaProduct2017/learn_NeuralNet)
 The repository中有例子：
@@ -128,6 +138,29 @@ Sentiment_RNN_Solution.ipynb
 ### (7) 词向量、句向量的生成与评测
 
 #### [关于word2vec](https://github.com/mediaProduct2017/learn-word2vec)
+
+### (10) 数据库的使用
+
+#### SQL课程与笔记
+
+### (12) 算法课程与leetcode
+
+### (13) 机器学习课程与笔记
+
+#### [learn-clustering](https://github.com/mediaProduct2017/learn-clustering)
+
+### (14) 文本处理的python技能
+
+#### [learn-python](https://github.com/mediaProduct2017/learn-python)
+
+### (15) Linux与系统工具
+
+#### [learn-conda](https://github.com/mediaProduct2017/learn-conda)
+conda, git, jupyter notebook, pycharm
+
+### (16) 并行编程
+
+#### [learn-ParallelProgram](https://github.com/mediaProduct2017/learn-ParallelProgram)
 
 
 ## 2. English part
