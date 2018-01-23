@@ -6,7 +6,9 @@ Idea is cheap, show me the code.
 
 ## 项目
 
-### (1) 句子与文本分类
+### (1) **句子与文本分类**
+
+#### syntac_model_deco: 以词为特征的文本分类（语义分析）神经网络模型：句法分析加词性限定挑选特征词
 
 #### [文本分类](https://github.com/mediaProduct2017/topic-classifier)
 用的是基于KNN思想和EMD测度的一个机器学习算法，论文发表于2015年，训练所需的时间少，在长文本分类方面相对其他算法有优势。Reddit data的5个类别的分类，正确率在60-70%
@@ -16,11 +18,14 @@ Idea is cheap, show me the code.
 
 #### MLP_model_deco, mlp_model_new: 以词为特征的文本分类（语义分析）神经网络模型：使用jieba的限定词性的关键词提取方法
 
-#### syntac_model_deco: 以词为特征的文本分类（语义分析）神经网络模型：句法分析加词性限定挑选特征词
 
 ### (2) 问答系统框架
 
-### (3) 自然语言问句转换为sparql等查询语言、自然语言问句转换为entity和attribute意图
+chatbot (dialogue manager), context (agent), intent processor (belief tracker)
+
+通过追问精确识别意图，比如听一首歌，去一个地方等。
+
+### (3) **自然语言问句转换为sparql等查询语言、自然语言问句转换为entity和attribute意图**
 
 #### nl2spar_deco, develop_deco, realse_knowledge_graph_temp: 自然语言转换为sparql语言（句法分析）：句法树规则，对应图结构表达式
 问题类与句法模板类的交互（复杂的地方）
@@ -74,7 +79,7 @@ GAN model
 
 #### [Download news data by a web crawler for reading](https://github.com/mediaProduct2017/reading)
 
-### (17) web开发
+### (17) web开发，网络通信
 
 #### [前端开发](https://github.com/mediaProduct2017/portfolio_site)
 
@@ -173,7 +178,7 @@ Sentiment_RNN_Solution.ipynb
 #### [learn-conda](https://github.com/mediaProduct2017/learn-conda)
 conda, git, jupyter notebook, pycharm
 
-### (16) 并行编程
+### (16) 并行编程、多线程、多进程
 
 #### [learn-ParallelProgram](https://github.com/mediaProduct2017/learn-ParallelProgram)
 
@@ -182,6 +187,12 @@ conda, git, jupyter notebook, pycharm
 ### (19) 统计学
 
 ### (20) 数据可视化
+
+### (21) 计算机体系架构，操作系统
+
+### (22) 代码风格与OOP设计
+
+### (23) Java, C/C++
 
 
 ## 2. English part
