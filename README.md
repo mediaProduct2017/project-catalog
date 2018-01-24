@@ -146,9 +146,21 @@ Sentiment_RNN_Solution.ipynb
 
 #### [模型的evaluate与validate](https://github.com/mediaProduct2017/learn_evaluate_validate)
 
+#### 学习资料
+
+[ZhitingHu/logicnn](https://github.com/ZhitingHu/logicnn)
+
+把规则编码到神经网络参数的选取中
+
 ### (2) 问答系统框架
 
+#### 学习资料
+
 [KB-InfoBot: A dialogue bot for information access](https://github.com/MiuLab/KB-InfoBot)
+
+在追问的选择方面有突破，在问答框架方面中规中矩
+
+[RasaHQ/rasa_nlu](https://github.com/RasaHQ/rasa_nlu)
 
 ### (5) 实体抽取
 
