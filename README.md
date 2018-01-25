@@ -27,7 +27,7 @@ chatbot (dialogue manager), context (agent), intent processor (belief tracker)
 
 ### (3) **自然语言问句转换为sparql等查询语言、自然语言问句转换为entity和attribute意图**
 
-#### nl2spar_deco, develop_deco, realse_knowledge_graph_temp: 自然语言转换为sparql语言（句法分析）：句法树规则，对应图结构表达式
+#### release_kg, nl2spar_deco, develop_deco, realse_knowledge_graph_temp: 自然语言转换为sparql语言（句法分析）：句法树规则，对应图结构表达式
 问题类与句法模板类的交互（复杂的地方）
 
 从句法模板到图结构表达式（创新点）
@@ -90,6 +90,10 @@ GAN model
 
 ### (1) 句子与文本分类
 
+#### 问答系统中belief tracker的意图识别问题和agent的状态判定问题
+
+#### 问答系统中追问的选择
+
 #### [text-classification](https://github.com/mediaProduct2017/text-classification)
 
 #### [关于神经网络模型](https://github.com/mediaProduct2017/learn_NeuralNet)
@@ -150,7 +154,7 @@ Sentiment_RNN_Solution.ipynb
 
 [ZhitingHu/logicnn](https://github.com/ZhitingHu/logicnn)
 
-把规则编码到神经网络参数的选取中
+把规则编码到神经网络参数的选取中：可微分编程，把if, else和其他逻辑语句用便于快速迭代优化的方式表达出来。最典型的例子是logistic regression的objective function，本来是if, else形式的，标签为1或0时，要优化的函数是不同的，通过巧妙的设计，可以把if, else合成一个表达式。这个项目做的是同样的事情，只是要表达的逻辑更加广泛，不只是上面的if, else形式，还包括多种复杂的逻辑结构，最终生成统一的objective function用于优化，用back propagation来优化。
 
 ### (2) 问答系统框架
 
@@ -158,7 +162,7 @@ Sentiment_RNN_Solution.ipynb
 
 [KB-InfoBot: A dialogue bot for information access](https://github.com/MiuLab/KB-InfoBot)
 
-在追问的选择方面有突破，在问答框架方面中规中矩
+在追问的选择方面（也是分类问题）有突破，在问答框架方面中规中矩
 
 [RasaHQ/rasa_nlu](https://github.com/RasaHQ/rasa_nlu)
 
