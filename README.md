@@ -21,7 +21,7 @@ Idea is cheap, show me the code.
 
 ### (2) 问答系统框架
 
-chatbot (dialogue manager), context (agent), intent processor (belief tracker)
+chatbot (dialogue manager), context (context agent), intent processor (belief tracker)
 
 通过追问精确识别意图，比如听一首歌，去一个地方等。
 
@@ -30,7 +30,11 @@ chatbot (dialogue manager), context (agent), intent processor (belief tracker)
 #### release_kg, nl2spar_deco, develop_deco, realse_knowledge_graph_temp: 自然语言转换为sparql语言（句法分析）：句法树规则，对应图结构表达式
 问题类与句法模板类的交互（复杂的地方）
 
-从句法模板到图结构表达式（创新点）
+从句法模板到图结构表达式（创新点1）
+
+先清洗不必要的词再进入句法模板（创新点2，减少不必要的虚词对句法分析的干扰）
+
+先做实体抽取后再进入句法模板（减少实体名字对句法分析的干扰）
 
 从图结构表达式到sparql语句（quepy的创新点）
 
@@ -68,6 +72,8 @@ GAN model
 
 #### [中文文本预处理及词云分析](https://github.com/mediaProduct2017/text-reco)
 
+#### mlp_model_new: 1. 模板及其分类的统计；2. 球员名字、国家队名字、俱乐部名字的统计 
+
 ### (10) 数据库的使用
 
 #### [logs-analysis](https://github.com/mediaProduct2017/logs-analysis)
@@ -86,13 +92,15 @@ GAN model
 #### [后端开发](https://github.com/mediaProduct2017/item-catalog)
 
 
-## 文章与笔记
+## 文章与笔记（基础知识）
 
 ### (1) 句子与文本分类
 
-#### 问答系统中belief tracker的意图识别问题和agent的状态判定问题
+#### 问答系统中belief tracker的意图识别（entity类的选择）、实体抽取问题（entity已知或需知属性的选择）和agent的状态判定问题
 
-#### 问答系统中追问的选择
+#### 问答系统中belief tracker的entity类所问属性的选择
+
+#### 问答系统中dialogue manager追问还是回答的选择，以及具体追问的选择
 
 #### [text-classification](https://github.com/mediaProduct2017/text-classification)
 
@@ -160,16 +168,28 @@ Sentiment_RNN_Solution.ipynb
 
 #### 学习资料
 
+[自然语言处理SpaCy](https://github.com/explosion/spaCy)
+
+[RasaHQ/rasa_nlu](https://github.com/RasaHQ/rasa_nlu)
+
+belief tracker的意图分析及实体识别，之后可以用简单的sql或者sparql语句从数据库中获取相关信息（也可以组合多个查询语句构建意图处理函数），构建检索式对话系统
+
+[RasaHQ/rasa_core](https://github.com/RasaHQ/rasa_core)
+
+dialogue manager以及context agent，用于构建多轮对话管理系统，构建任务式对话系统
+
+[检索系统ElasticSearch](https://github.com/elastic/elasticsearch)
+
 [KB-InfoBot: A dialogue bot for information access](https://github.com/MiuLab/KB-InfoBot)
 
 在追问的选择方面（也是分类问题）有突破，在问答框架方面中规中矩
-
-[RasaHQ/rasa_nlu](https://github.com/RasaHQ/rasa_nlu)
 
 ### (5) 实体抽取
 
 #### [word window的分类](https://github.com/mediaProduct2017/learn-WordWindow)
 有很多实际问题都是word window的分类问题，比如词性判断、实体识别等
+
+#### 自然语言处理中的分词及实体识别：[HMM, MEMM, CRF](http://tripleday.cn/2016/07/14/hmm-memm-crf/)
 
 ### (7) 词向量、句向量的生成与评测
 
@@ -185,6 +205,8 @@ Sentiment_RNN_Solution.ipynb
 
 #### [learn-clustering](https://github.com/mediaProduct2017/learn-clustering)
 
+#### 李航：统计学习方法
+
 ### (14) 文本处理的python技能
 
 #### [learn-python](https://github.com/mediaProduct2017/learn-python)
@@ -194,7 +216,7 @@ Sentiment_RNN_Solution.ipynb
 #### [learn-conda](https://github.com/mediaProduct2017/learn-conda)
 conda, git, jupyter notebook, pycharm
 
-### (16) 并行编程、多线程、多进程
+### (16) 并行编程、多线程、多进程、协程
 
 #### [learn-ParallelProgram](https://github.com/mediaProduct2017/learn-ParallelProgram)
 
