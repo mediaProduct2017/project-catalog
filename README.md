@@ -25,6 +25,8 @@ chatbot (dialogue manager), context (context agent), intent processor (belief tr
 
 通过追问精确识别意图，比如听一首歌，去一个地方等。
 
+检索式问答系统（搜索引擎、数据库查询），任务式问答系统、闲聊系统
+
 ### (3) **自然语言问句转换为sparql等查询语言、自然语言问句转换为entity和attribute意图**
 
 #### release_kg, nl2spar_deco, develop_deco, realse_knowledge_graph_temp: 自然语言转换为sparql语言（句法分析）：句法树规则，对应图结构表达式
@@ -45,12 +47,16 @@ chatbot (dialogue manager), context (context agent), intent processor (belief tr
 
 ### (4) 短文本中的关系抽取、推理式关系抽取，知识图谱中的推理
 
+机器阅读理解的数据集与比赛
+
 ### (5) 实体抽取
 
 ### (6) 自然语言生成、风格变换等
 
 #### [文本生成器](https://github.com/mediaProduct2017/tv-script-decoder)
 LSTM decoder
+
+Seq2seq decoder正在取代传统的语言模型（预测一个句子出现的概率）。在传统的n-gram model中，一个句子的概率等于各个词出现的条件概率，如果是2-gram model，那么一个词出现的概率就只与前一个词相关。n-gram model又叫做n-1阶马尔科夫模型，当前词的出现概率只与前面n-1个词相关
 
 #### [机器翻译](https://github.com/mediaProduct2017/language-translation-seq2seq)
 Seq2seq model
@@ -164,6 +170,8 @@ Sentiment_RNN_Solution.ipynb
 
 把规则编码到神经网络参数的选取中：可微分编程，把if, else和其他逻辑语句用便于快速迭代优化的方式表达出来。最典型的例子是logistic regression的objective function，本来是if, else形式的，标签为1或0时，要优化的函数是不同的，通过巧妙的设计，可以把if, else合成一个表达式。这个项目做的是同样的事情，只是要表达的逻辑更加广泛，不只是上面的if, else形式，还包括多种复杂的逻辑结构，最终生成统一的objective function用于优化，用back propagation来优化。
 
+[fastText原理及实践](http://www.52nlp.cn/fasttext)
+
 ### (2) 问答系统框架
 
 #### 学习资料
@@ -189,7 +197,9 @@ dialogue manager以及context agent，用于构建多轮对话管理系统，构
 #### [word window的分类](https://github.com/mediaProduct2017/learn-WordWindow)
 有很多实际问题都是word window的分类问题，比如词性判断、实体识别等
 
-#### 自然语言处理中的分词及实体识别：[HMM, MEMM, CRF](http://tripleday.cn/2016/07/14/hmm-memm-crf/)
+#### 学习资料
+
+自然语言处理中的分词及实体识别：[HMM, MEMM, CRF](http://tripleday.cn/2016/07/14/hmm-memm-crf/)
 
 ### (7) 词向量、句向量的生成与评测
 
@@ -201,11 +211,21 @@ dialogue manager以及context agent，用于构建多轮对话管理系统，构
 
 ### (12) 算法课程与leetcode
 
-### (13) 机器学习课程与笔记
+### (13) 机器学习、自然语言处理课程与笔记
 
 #### [learn-clustering](https://github.com/mediaProduct2017/learn-clustering)
 
 #### 李航：统计学习方法
+
+#### 学习资料
+
+[自然语言处理怎么最快入门](https://www.zhihu.com/question/19895141)
+
+[我爱自然语言处理](http://www.52nlp.cn/)
+
+[LDA](http://www.52nlp.cn/tag/lda)
+
+[概率语言模型及其变形系列-LDA及Gibbs Sampling](http://www.52nlp.cn/%E6%A6%82%E7%8E%87%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%8F%8A%E5%85%B6%E5%8F%98%E5%BD%A2%E7%B3%BB%E5%88%97-lda%E5%8F%8Agibbs-sampling)
 
 ### (14) 文本处理的python技能
 
