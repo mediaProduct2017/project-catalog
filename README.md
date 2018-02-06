@@ -27,6 +27,8 @@ chatbot (dialogue manager), context (context agent), intent processor (belief tr
 
 检索式问答系统（搜索引擎、数据库查询），任务式问答系统、闲聊系统
 
+belief tracker也是一个pipeline，包括意图识别、实体抽取等多个模块，每个模块都可以用机器学习方法训练
+
 ### (3) **自然语言问句转换为sparql等查询语言、自然语言问句转换为entity和attribute意图**
 
 #### release_kg, nl2spar_deco, develop_deco, realse_knowledge_graph_temp: 自然语言转换为sparql语言（句法分析）：句法树规则，对应图结构表达式
@@ -34,7 +36,9 @@ chatbot (dialogue manager), context (context agent), intent processor (belief tr
 
 从句法模板到图结构表达式（创新点1）
 
-先清洗不必要的词再进入句法模板（创新点2，减少不必要的虚词对句法分析的干扰）
+从分词后列表模板到图结构表达式（创新点2）
+
+先清洗不必要的词再进入句法模板（创新点3，减少不必要的虚词对句法分析的干扰）
 
 先做实体抽取后再进入句法模板（减少实体名字对句法分析的干扰）
 
@@ -56,7 +60,13 @@ chatbot (dialogue manager), context (context agent), intent processor (belief tr
 #### [文本生成器](https://github.com/mediaProduct2017/tv-script-decoder)
 LSTM decoder
 
-Seq2seq decoder正在取代传统的语言模型（预测一个句子出现的概率）。在传统的n-gram model中，一个句子的概率等于各个词出现的条件概率，如果是2-gram model，那么一个词出现的概率就只与前一个词相关。n-gram model又叫做n-1阶马尔科夫模型，当前词的出现概率只与前面n-1个词相关
+Seq2seq decoder正在取代传统的语言模型（预测一个句子出现的概率）。在传统的n-gram model中，一个句子的概率等于各个词出现的条件概率，如果是2-gram model，那么一个词出现的概率就只与前一个词相关。n-gram model又叫做n-1阶马尔科夫模型，当前词的出现概率只与前面n-1个词相关。
+
+An n-gram is a continuous sequence of n items from a given sample of text or speech. The items can be letters, words or base pairs according to the application. Facebook的fastText分类算法就是对n-gram words的很好的应用（在中文中，也可以用在n-gram characters上面）。
+
+通常所说的语言模型其实是语言生成模型，即n-gram模型，即可以给出一个生成的句子中各个词出现的概率（句子的概率也就可以相乘得到），每个词的概率都是仅由前面几个词决定的，但Seq2seq decoder出现后，语言生成模型更多的使用深度学习模型，每个词的概率不仅由前一个词决定，还和前面所有的词都相关，是一种更好的生成模型。
+
+语言生成模型在语音识别、机器翻译、分词、词性标注、句法分析等自然语言处理的基础领域都是有用的。
 
 #### [机器翻译](https://github.com/mediaProduct2017/language-translation-seq2seq)
 Seq2seq model
@@ -65,6 +75,8 @@ Seq2seq model
 GAN model
 
 ### (7) 词向量、句向量的生成与评测
+
+#### word_vec_deco2: 从fasttext vector中查询某个词的对应向量，并用PCA做可视化评估
 
 ### (8) 机器学习模型用于连续变量的预测
 
@@ -178,6 +190,8 @@ Sentiment_RNN_Solution.ipynb
 
 [自然语言处理SpaCy](https://github.com/explosion/spaCy)
 
+[自然语言处理gensim](https://radimrehurek.com/gensim/)
+
 [RasaHQ/rasa_nlu](https://github.com/RasaHQ/rasa_nlu)
 
 belief tracker的意图分析及实体识别，之后可以用简单的sql或者sparql语句从数据库中获取相关信息（也可以组合多个查询语句构建意图处理函数），构建检索式对话系统
@@ -187,6 +201,8 @@ belief tracker的意图分析及实体识别，之后可以用简单的sql或者
 dialogue manager以及context agent，用于构建多轮对话管理系统，构建任务式对话系统
 
 [检索系统ElasticSearch](https://github.com/elastic/elasticsearch)
+
+[自然语言处理NLTK](http://www.nltk.org/)
 
 [KB-InfoBot: A dialogue bot for information access](https://github.com/MiuLab/KB-InfoBot)
 
@@ -230,6 +246,7 @@ dialogue manager以及context agent，用于构建多轮对话管理系统，构
 ### (14) 文本处理的python技能
 
 #### [learn-python](https://github.com/mediaProduct2017/learn-python)
+pandas, numpy
 
 ### (15) Linux与系统工具
 
@@ -245,6 +262,7 @@ conda, git, jupyter notebook, pycharm
 ### (19) 统计学
 
 ### (20) 数据可视化
+matplotlib
 
 ### (21) 计算机体系架构，操作系统
 
