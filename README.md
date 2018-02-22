@@ -16,16 +16,20 @@ Idea is cheap, show me the code.
 #### [图像识别](https://github.com/mediaProduct2017/image-classification)
 使用基本的CNN进行图片分类与识别（10个类别），正确率接近70%，数据来源是CIFAR-10 dataset
 
-#### MLP_model_deco, mlp_model_new: 以词为特征的文本分类（语义分析）神经网络模型：使用jieba的限定词性的关键词提取方法
+#### MLP_model_deco, mlp_model_new: 以词为特征的文本分类（语义分析）神经网络模型：使用jieba的限定词性的关键词提取方法；excel读取及数据统计
 
 
 ### (2) 问答系统框架
+
+#### nlu2: 利用rasa_nlu做意图识别和实体抽取，然后可以对应到某一类查询语句上并传递参数
 
 chatbot (dialogue manager), context (context agent), intent processor (belief tracker)
 
 通过追问精确识别意图，比如听一首歌，去一个地方等。
 
 检索式问答系统（搜索引擎、数据库查询），任务式问答系统、闲聊系统
+
+检索式问答系统：Sentence alignment (ElasticSearch)和sentence similarity classification用于问句分类；问答对可以从数据库中自动产生（自然语言问句转化为查询语言），问答对中的问句可以先清除掉stop words，再放入ES，用户的问句也可以先清除掉停用词，再进入ES做匹配
 
 belief tracker也是一个pipeline，包括意图识别、实体抽取等多个模块，每个模块都可以用机器学习方法训练
 
@@ -43,6 +47,8 @@ kg_clean: 先清洗不必要的词再进入句法模板（创新点3，减少不
 先做实体抽取后再进入句法模板（减少实体名字对句法分析的干扰）
 
 从图结构表达式到sparql语句（quepy的创新点）
+
+[quepy](https://github.com/machinalis/quepy)
 
 #### parse_tree: 可用于自我学习“自然语言转换为sparql语言”的句法树向量，可作为机器学习模型的特征之一
 
@@ -90,7 +96,7 @@ GAN model
 
 #### [中文文本预处理及词云分析](https://github.com/mediaProduct2017/text-reco)
 
-#### mlp_model_new: 1. 模板及其分类的统计；2. 球员名字、国家队名字、俱乐部名字的统计 
+#### mlp_model_new: 0. Excel文件的读入；1. 模板及其分类的统计；2. 球员名字、国家队名字、俱乐部名字的统计 
 
 ### (10) 数据库的使用
 
@@ -184,13 +190,31 @@ Sentiment_RNN_Solution.ipynb
 
 [fastText原理及实践](http://www.52nlp.cn/fasttext)
 
+[fastText python](https://github.com/facebookresearch/fastText/tree/master/python)
+
+[scikit-learn](https://github.com/scikit-learn/scikit-learn)
+
+[pyltp](https://github.com/HIT-SCIR/pyltp)
+
+[jieba](https://github.com/fxsjy/jieba)
+
 ### (2) 问答系统框架
+
+百度：
+
+中国的gdp，中国gdp：返回知识图谱中的图表，预计问答对中的问句原文是-中国gdp，“的”作为停用词
+
+中的国gdp：同中国gdp，句子相似度较大
+
+中的国的gdp：不同于中国gdp，句子相似度在阈值之下
 
 #### 学习资料
 
 [自然语言处理SpaCy](https://github.com/explosion/spaCy)
 
 [自然语言处理gensim](https://radimrehurek.com/gensim/)
+
+[爬虫scrapy](https://github.com/scrapy/scrapy)
 
 [RasaHQ/rasa_nlu](https://github.com/RasaHQ/rasa_nlu)
 
@@ -207,6 +231,10 @@ dialogue manager以及context agent，用于构建多轮对话管理系统，构
 [KB-InfoBot: A dialogue bot for information access](https://github.com/MiuLab/KB-InfoBot)
 
 在追问的选择方面（也是分类问题）有突破，在问答框架方面中规中矩
+
+[flask](https://github.com/pallets/flask)
+
+[sqlalchemy](https://github.com/zzzeek/sqlalchemy)
 
 ### (5) 实体抽取
 
@@ -226,6 +254,8 @@ dialogue manager以及context agent，用于构建多轮对话管理系统，构
 #### SQL课程与笔记
 
 ### (12) 算法课程与leetcode
+
+coursera算法课
 
 ### (13) 机器学习、自然语言处理课程与笔记
 
@@ -247,6 +277,8 @@ dialogue manager以及context agent，用于构建多轮对话管理系统，构
 
 #### [learn-python](https://github.com/mediaProduct2017/learn-python)
 pandas, numpy
+
+#### [Talk Python To Me](https://talkpython.fm/)
 
 ### (15) Linux与系统工具
 
@@ -277,3 +309,30 @@ matplotlib
 
 
 ## Articles and notes
+
+
+## 3. References
+
+Fluent python及中文版, 2015
+
+Dive into python3及中文版, 2014
+
+The hitchhiker's guide to python, 2016
+
+A Survey on Dialogue Systems: Recent Advances and New Frontiers, 2017
+
+Automated Template Generation for Question Answering over Knowledge Graphs, 2017
+
+Harnessing Deep Neural Networks with Logic Rules, 2016
+
+Quepy Documentation, 2017
+
+Rasa: Open Source Language Understanding and Dialogue Management, 2017
+
+强化学习在阿里的技术演进与业务创新, 2017
+
+A Multi-Layer System for Semantic Textual Similarity, 2016
+
+Learning scrapy, 2016
+
+[quepy](https://github.com/machinalis/quepy)
