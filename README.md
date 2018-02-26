@@ -313,11 +313,19 @@ matplotlib
 
 ## 3. References
 
-Fluent python及中文版, 2015
-
 Dive into python3及中文版, 2014
 
+修改、标注、总结syntac_model_deco
+
+修改、标注、总结release_kg
+
+Fluent python及中文版, 2015
+
+Introduction to algorithms (CLRS)及课程, 2017
+
 The hitchhiker's guide to python, 2016
+
+A Multi-Layer System for Semantic Textual Similarity, 2016
 
 A Survey on Dialogue Systems: Recent Advances and New Frontiers, 2017
 
@@ -330,8 +338,6 @@ Quepy Documentation, 2017
 Rasa: Open Source Language Understanding and Dialogue Management, 2017
 
 强化学习在阿里的技术演进与业务创新, 2017
-
-A Multi-Layer System for Semantic Textual Similarity, 2016
 
 Learning scrapy, 2016
 
