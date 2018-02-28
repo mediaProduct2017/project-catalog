@@ -21,6 +21,8 @@ Idea is cheap, show me the code.
 
 ### (2) 问答系统框架
 
+#### release_kg: 先对原话进行正则替换预处理（分词之前的处理），再做分词停用词预处理（中文独有特点）；或者先做分词停用词预处理，再做正则替换预处理（英文或中文的处理办法）。
+
 #### nlu2: 利用rasa_nlu做意图识别和实体抽取，然后可以对应到某一类查询语句上并传递参数
 
 chatbot (dialogue manager), context (context agent), intent processor (belief tracker)
@@ -35,6 +37,10 @@ belief tracker也是一个pipeline，包括意图识别、实体抽取等多个�
 
 ### (3) **自然语言问句转换为sparql等查询语言、自然语言问句转换为entity和attribute意图**
 
+#### 分词与句法分析：用同一套系统的好处是，词性分析也许能认出分出的词，词性分析更准，同理句法分析也更准；用不同的分词系统的好处是，可能拥有更好更灵活的分词系统（除了给出用户自定义词汇外，jieba能针对自定义词汇给出不同权重）。
+
+#### 意图处理和实体抽取：字符序列，词汇集合，词汇列表，句法，正则，深度学习特征
+
 #### release_kg, nl2spar_deco, develop_deco, realse_knowledge_graph_temp: 自然语言转换为sparql语言（句法分析）：句法树规则，对应图结构表达式
 问题类与句法模板类的交互（复杂的地方）
 
@@ -42,7 +48,7 @@ release_kg: 从句法模板到图结构表达式（创新点1）
 
 release_kg:从分词后列表模板到图结构表达式（创新点2）
 
-kg_clean: 先清洗不必要的词再进入句法模板（创新点3，减少不必要的虚词对句法分析的干扰）
+kg_clean, release_kg: 先清洗不必要的词再进入句法模板（创新点3，减少不必要的虚词对句法分析的干扰）
 
 先做实体抽取后再进入句法模板（减少实体名字对句法分析的干扰）
 
@@ -82,7 +88,7 @@ GAN model
 
 ### (7) 词向量、句向量的生成与评测
 
-#### word_vec_deco2: 从fasttext vector中查询某个词的对应向量，并用PCA做可视化评估
+#### word_vec_deco2: 从fasttext vector或其他word2vec结果中查询所关心的一系列词汇的对应向量，并用PCA做可视化评估，PCA图像可以作为评估word2vec效果的重要参考
 
 ### (8) 机器学习模型用于连续变量的预测
 
@@ -313,13 +319,15 @@ matplotlib
 
 ## 3. References
 
-Dive into python3及中文版, 2014
+Dive into python3及中文版, 2009 (python3.0, python3.1)
 
 修改、标注、总结syntac_model_deco
 
 修改、标注、总结release_kg
 
-Fluent python及中文版, 2015
+修改、标注、总结word_vec_deco2
+
+Fluent python及中文版, 2015 (python3.4, python3.5)
 
 Introduction to algorithms (CLRS)及课程, 2017
 
