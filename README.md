@@ -350,3 +350,20 @@ Rasa: Open Source Language Understanding and Dialogue Management, 2017
 Learning scrapy, 2016
 
 [quepy](https://github.com/machinalis/quepy)
+
+## 4. Core projects
+
+/Users/arfu/Documents/Python_projects/PycharmProjects/:
+
+CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/one_hot_encoding
+
+CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/q2answer
+
+CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/entity_lookup
+
+[arfu2016/DuReader](https://github.com/arfu2016/DuReader)
+
+Rasa-nlu
+
+Rasa-core
+
