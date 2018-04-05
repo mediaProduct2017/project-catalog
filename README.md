@@ -353,7 +353,7 @@ Learning scrapy, 2016
 
 ## 4. Core projects
 
-/Users/arfu/Documents/Python_projects/PycharmProjects/:
+### /Users/arfu/Documents/Python_projects/PycharmProjects/
 
 CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/one_hot_encoding
 
@@ -361,9 +361,15 @@ CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/q2answer
 
 CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/entity_lookup
 
+### Others
+
 [arfu2016/DuReader](https://github.com/arfu2016/DuReader)
 
-Rasa-nlu
+[codelucas/newspaper](https://github.com/codelucas/newspaper)
 
-Rasa-core
+[scrapy/scrapy](https://github.com/scrapy/scrapy)
+
+[Rasa-nlu](https://github.com/RasaHQ/rasa_nlu)
+
+[Rasa-core](https://github.com/RasaHQ/rasa_core)
 
