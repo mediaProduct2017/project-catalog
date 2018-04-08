@@ -106,10 +106,27 @@ GAN model
 
 ### (10) 数据库的使用
 
-#### [logs-analysis](https://github.com/mediaProduct2017/logs-analysis)
+#### Postgresql
 
-#### redis_mysql_deco: Redis缓存，以及从Redis到Mysql的数据转移（工业级别）
+[logs-analysis](https://github.com/mediaProduct2017/logs-analysis)
+
+[topic-classifier/db_connect.py](https://github.com/mediaProduct2017/topic-classifier/blob/master/db_connect.py)
+
+sqlalchemy
+
+[item-catalog/database_setup.py](https://github.com/mediaProduct2017/item-catalog/blob/master/database_setup.py)
+
+#### Mysql
+
+sqlalchemy
+
+[dataAnalysis/1p4ETL_SQL.ipynb](https://github.com/mediaProduct2017/dataAnalysis/blob/master/1p4ETL_SQL.ipynb)
+
+redis_mysql_deco: Redis缓存，以及从Redis到Mysql的数据转移（工业级别）
+
 主要是注意降低网络操作的频率，包括建立网络连接，查询数据库等crud操作(create, read, update, delete)
+
+#### Redis
 
 ### (11) 数据爬虫
 
@@ -259,9 +276,15 @@ dialogue manager以及context agent，用于构建多轮对话管理系统，构
 
 #### SQL课程与笔记
 
+#### Redis笔记
+
+#### [mongoDB课程与笔记](https://github.com/mediaProduct2017/mongoDB_examples)
+
 ### (12) 算法课程与leetcode
 
 coursera算法课
+
+日常用到的传统算法的总结
 
 ### (13) 机器学习、自然语言处理课程与笔记
 
@@ -353,7 +376,7 @@ Learning scrapy, 2016
 
 ## 4. Core projects
 
-### /Users/arfu/Documents/Python_projects/PycharmProjects/
+### /Users/arfu/Documents/Python_projects/PycharmProjects/:
 
 CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/one_hot_encoding
 
@@ -361,7 +384,7 @@ CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/q2answer
 
 CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/entity_lookup
 
-### Others
+### Others:
 
 [arfu2016/DuReader](https://github.com/arfu2016/DuReader)
 
