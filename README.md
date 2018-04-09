@@ -65,7 +65,15 @@ kg_clean, release_kg: 先清洗不必要的词再进入句法模板（创新点3
 
 机器阅读理解的数据集与比赛
 
+[arfu2016/DuReader](https://github.com/arfu2016/DuReader)
+
 ### (5) 实体抽取
+
+/Users/arfu/Documents/Python_projects/PycharmProjects/CubeGirl:
+
+git branch: worldcup_kg
+
+CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/entity_lookup
 
 ### (6) 自然语言生成、风格变换等
 
@@ -106,7 +114,7 @@ GAN model
 
 ### (10) 数据库的使用
 
-#### Postgresql
+#### Postgresql:
 
 [logs-analysis](https://github.com/mediaProduct2017/logs-analysis)
 
@@ -116,13 +124,17 @@ sqlalchemy
 
 [item-catalog/database_setup.py](https://github.com/mediaProduct2017/item-catalog/blob/master/database_setup.py)
 
-#### Mysql
+#### Mysql:
 
 sqlalchemy
 
 [dataAnalysis/1p4ETL_SQL.ipynb](https://github.com/mediaProduct2017/dataAnalysis/blob/master/1p4ETL_SQL.ipynb)
 
-redis_mysql_deco: Redis缓存，以及从Redis到Mysql的数据转移（工业级别）
+/Users/arfu/Documents/Python_projects/PycharmProjects/CubeGirl:
+
+git branch: redis_mysql_deco: Redis缓存，以及从Redis到Mysql的数据转移（工业级别）
+
+CubeGirl/SourceCode/Daka/chatbot/logic/text_table
 
 主要是注意降低网络操作的频率，包括建立网络连接，查询数据库等crud操作(create, read, update, delete)
 
@@ -286,6 +298,22 @@ coursera算法课
 
 日常用到的传统算法的总结
 
+#### Search algorithm
+
+[bisect](https://docs.python.org/3/library/bisect.html): binary search的模块，O(log(n))时间复杂度
+
+list查找，线性时间复杂度
+
+set或者dict查找，O(1)时间复杂度，用的是hash table，但是耗内存，以空间换时间
+
+#### Sort algorithm
+
+[Timsort](https://en.wikipedia.org/wiki/Timsort): a hybrid stable sorting algorithm, derived from merge sort and insertion sort
+
+The sorting algorithm used in sorted and list.sort is Timsort, and adaptive algorithm that switches from insertion sort to merge sort strategies, depending on how ordered the data is. This is efficient because real-world data tends to have runs of sorted items.
+
+[fluent python timsort](https://books.google.com.hk/books?id=kYZHCgAAQBAJ&pg=PA66&lpg=PA66&dq=fluent+python+timsort&source=bl&ots=iswgRxyRQf&sig=aTSU_VLmoX8meNk3Hom26vMvX4c&hl=en&sa=X&redir_esc=y&hl=zh-CN&sourceid=cndr#v=onepage&q=fluent%20python%20timsort&f=false)
+
 ### (13) 机器学习、自然语言处理课程与笔记
 
 #### [learn-clustering](https://github.com/mediaProduct2017/learn-clustering)
@@ -376,7 +404,9 @@ Learning scrapy, 2016
 
 ## 4. Core projects
 
-### /Users/arfu/Documents/Python_projects/PycharmProjects/:
+### /Users/arfu/Documents/Python_projects/PycharmProjects/CubeGirl:
+
+git branch: worldcup_kg
 
 CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/one_hot_encoding
 
