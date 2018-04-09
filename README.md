@@ -160,6 +160,14 @@ git branch: worldcup_kg
 
 CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/one_hot_encoding/test_MLP.py
 
+单元测试
+
+/Users/arfu/Documents/Python_projects/PycharmProjects/CubeGirl:
+
+git branch: develop_deco
+
+CubeGirl/SourceCode/Daka/chatbot/logic/text_table/syntactic_tree/test_syntactic_template.py
+
 句法模板分类测试
 
 /Users/arfu/Documents/Python_projects/PycharmProjects/CubeGirl:
