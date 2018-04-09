@@ -300,11 +300,23 @@ coursera算法课
 
 #### Search algorithm
 
-[bisect](https://docs.python.org/3/library/bisect.html): binary search的模块，O(log(n))时间复杂度
+[bisect](https://docs.python.org/3/library/bisect.html): binary search的模块，查找一个词，O(log(n))时间复杂度，n是list的长度
 
-list查找，线性时间复杂度
+list查找一个词的话，线性时间复杂度
 
-set或者dict查找，O(1)时间复杂度，用的是hash table，但是耗内存，以空间换时间
+set或者dict查找一个词的话，O(1)时间复杂度，用的是hash table，但是耗内存，以空间换时间
+
+list查找多个词的话，可以把多个词放在set里边，扫描list；也可以扫描list，使用collections中的Counter()，去挨个计数list中的词；这样的话，扫描list一次，就可以把想要的结果全部拿到，时间复杂度是O(n)，与要查找的词的个数无关
+
+对于正则表达式的查找，如果string的长度为L的话，时间复杂度是O(L)
+
+如果是多个正则表达式的查找的话，比如n个，按一般方法，时间复杂度是O(nL)，但是google开发出的[re2](https://github.com/google/re2)，时间复杂度可以达到O(L)，与n无关。
+
+[Of running multiple regexp at once](https://fulmicoton.com/posts/multiregexp/)
+
+[facebook/pyre2](https://github.com/facebook/pyre2)
+
+[re3 0.2.23](https://pypi.python.org/pypi/re3/0.2.23)
 
 #### Sort algorithm
 
