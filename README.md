@@ -150,6 +150,23 @@ CubeGirl/SourceCode/Daka/chatbot/logic/text_table
 
 #### [后端开发](https://github.com/mediaProduct2017/item-catalog)
 
+### (24) 测试
+
+测速，timeit
+
+/Users/arfu/Documents/Python_projects/PycharmProjects/CubeGirl:
+
+git branch: worldcup_kg
+
+CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/one_hot_encoding/test_MLP.py
+
+句法模板分类测试
+
+/Users/arfu/Documents/Python_projects/PycharmProjects/CubeGirl:
+
+git branch: worldcup_kg
+
+CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/one_hot_encoding/test_questions.py
 
 ## 文章与笔记（基础知识）
 
