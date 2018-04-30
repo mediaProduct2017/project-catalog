@@ -6,6 +6,8 @@ Idea is cheap, show me the code.
 
 ## 项目
 
+### 自然语言处理任务
+
 ### (1) **句子与文本分类**
 
 #### syntac_model_deco: 以词为特征的文本分类（语义分析）神经网络模型：句法分析加词性限定挑选特征词
@@ -61,7 +63,7 @@ kg_clean, release_kg: 先清洗不必要的词再进入句法模板（创新点3
 #### 基于语义的特定模板之句法规则，用于把自然语言转化为sql查询语言
 句法模板，把一句话转变为另一句话，即同义自然语言句子之间的转换
 
-### (4) 短文本中的关系抽取、推理式关系抽取，知识图谱中的推理
+### (4) 短文本中的关系抽取、推理式关系抽取，机器阅读理解，信息抽取，知识图谱中的推理
 
 机器阅读理解的数据集与比赛
 
@@ -94,16 +96,32 @@ Seq2seq model
 #### [图片生成](https://github.com/mediaProduct2017/face-generation-GAN)
 GAN model
 
-### (7) 词向量、句向量的生成与评测
+### 自然语言处理手段
+
+### (7) 自然语言的向量化，词向量、句向量的生成与评测，语义分析，vector encoder
 
 #### word_vec_deco2: 从fasttext vector或其他word2vec结果中查询所关心的一系列词汇的对应向量，并用PCA做可视化评估，PCA图像可以作为评估word2vec效果的重要参考
 
-### (8) 机器学习模型用于连续变量的预测
+[Module google/universal-sentence-encoder/1](https://www.tensorflow.org/hub/modules/google/universal-sentence-encoder/1)
+
+#### mediaProduct2017/nlu-vector
+
+### (8) tagging，词法分析，one hot encoding
+
+### (9) parsing，句法分析
+
+### (10) classifier
+
+### (11) decoder: a special classifier
+
+### 深度学习、机器学习与数据科学
+
+### (12) 机器学习模型用于连续变量的预测
 
 #### [共享单车使用预测](https://github.com/mediaProduct2017/bike-rentals)
 用的是一个简单的neural network, a fully connected network，output layer使用$f(x)=x$做activation
 
-### (9) 数据预处理
+### (13) 数据预处理
 
 #### [训练狗的网站用户付费概率预测](https://github.com/mediaProduct2017/dataAnalysis)
 首先需要对数据做预处理，然后是数据仓库的构建，最后才是数学建模
@@ -112,7 +130,7 @@ GAN model
 
 #### mlp_model_new: 0. Excel文件的读入；1. 模板及其分类的统计；2. 球员名字、国家队名字、俱乐部名字的统计 
 
-### (10) 数据库的使用
+### (14) 数据库的使用
 
 #### Postgresql:
 
@@ -140,17 +158,21 @@ CubeGirl/SourceCode/Daka/chatbot/logic/text_table
 
 #### Redis
 
-### (11) 数据爬虫
+#### MongoDB
+
+### (15) 数据爬虫
 
 #### [Download news data by a web crawler for reading](https://github.com/mediaProduct2017/reading)
 
-### (17) web开发，网络通信
+### Computer Science and Math
+
+### (27) web开发，网络通信
 
 #### [前端开发](https://github.com/mediaProduct2017/portfolio_site)
 
 #### [后端开发](https://github.com/mediaProduct2017/item-catalog)
 
-### (24) 测试
+### (28) 测试
 
 测速，timeit
 
@@ -177,6 +199,8 @@ git branch: worldcup_kg
 CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/one_hot_encoding/test_questions.py
 
 ## 文章与笔记（基础知识）
+
+### 自然语言处理任务
 
 ### (1) 句子与文本分类
 
@@ -305,19 +329,54 @@ dialogue manager以及context agent，用于构建多轮对话管理系统，构
 
 自然语言处理中的分词及实体识别：[HMM, MEMM, CRF](http://tripleday.cn/2016/07/14/hmm-memm-crf/)
 
+### 自然语言处理手段
+
 ### (7) 词向量、句向量的生成与评测
 
 #### [关于word2vec](https://github.com/mediaProduct2017/learn-word2vec)
 
-### (10) 数据库的使用
+### 深度学习、机器学习与数据科学
+
+### (14) 数据库的使用
 
 #### SQL课程与笔记
+
+[Python DB-API](https://classroom.udacity.com/courses/ud032)
 
 #### Redis笔记
 
 #### [mongoDB课程与笔记](https://github.com/mediaProduct2017/mongoDB_examples)
 
-### (12) 算法课程与leetcode
+[使用 MongoDB](https://classroom.udacity.com/courses/ud032)
+
+### (16) 机器学习、自然语言处理课程与笔记
+
+#### [learn-clustering](https://github.com/mediaProduct2017/learn-clustering)
+
+#### 李航：统计学习方法
+
+#### 学习资料
+
+[自然语言处理怎么最快入门](https://www.zhihu.com/question/19895141)
+
+[我爱自然语言处理](http://www.52nlp.cn/)
+
+[LDA](http://www.52nlp.cn/tag/lda)
+
+[概率语言模型及其变形系列-LDA及Gibbs Sampling](http://www.52nlp.cn/%E6%A6%82%E7%8E%87%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%8F%8A%E5%85%B6%E5%8F%98%E5%BD%A2%E7%B3%BB%E5%88%97-lda%E5%8F%8Agibbs-sampling)
+
+### (17) 深度学习
+
+[Deep Learning for Cancer Detection with Sebastian Thrun](https://classroom.udacity.com/nanodegrees/nd101/parts/ee36fc70-6f3e-4a9f-a5b1-fb6d03d40de4/modules/ff4ffa88-13e9-4a64-a280-c793a6cb0064/lessons/54e18898-2666-445d-ba5c-ecab62a61d00/concepts/c225888e-8e82-4020-a641-acdda4008fa5)
+
+### (18) 统计学
+
+### (19) 数据可视化
+matplotlib
+
+### Computer Science and Math
+
+### (20) 算法课程与leetcode
 
 coursera算法课
 
@@ -351,50 +410,29 @@ The sorting algorithm used in sorted and list.sort is Timsort, and adaptive algo
 
 [fluent python timsort](https://books.google.com.hk/books?id=kYZHCgAAQBAJ&pg=PA66&lpg=PA66&dq=fluent+python+timsort&source=bl&ots=iswgRxyRQf&sig=aTSU_VLmoX8meNk3Hom26vMvX4c&hl=en&sa=X&redir_esc=y&hl=zh-CN&sourceid=cndr#v=onepage&q=fluent%20python%20timsort&f=false)
 
-### (13) 机器学习、自然语言处理课程与笔记
-
-#### [learn-clustering](https://github.com/mediaProduct2017/learn-clustering)
-
-#### 李航：统计学习方法
-
-#### 学习资料
-
-[自然语言处理怎么最快入门](https://www.zhihu.com/question/19895141)
-
-[我爱自然语言处理](http://www.52nlp.cn/)
-
-[LDA](http://www.52nlp.cn/tag/lda)
-
-[概率语言模型及其变形系列-LDA及Gibbs Sampling](http://www.52nlp.cn/%E6%A6%82%E7%8E%87%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%8F%8A%E5%85%B6%E5%8F%98%E5%BD%A2%E7%B3%BB%E5%88%97-lda%E5%8F%8Agibbs-sampling)
-
-### (14) 文本处理的python技能
+### (21) 文本处理的python技能
 
 #### [learn-python](https://github.com/mediaProduct2017/learn-python)
 pandas, numpy
 
 #### [Talk Python To Me](https://talkpython.fm/)
 
-### (15) Linux与系统工具
+### (22) Linux与系统工具
 
 #### [learn-conda](https://github.com/mediaProduct2017/learn-conda)
 conda, git, jupyter notebook, pycharm
 
-### (16) 并行编程、多线程、多进程、协程
+### (23) 并行编程、多线程、多进程、协程
 
 #### [learn-ParallelProgram](https://github.com/mediaProduct2017/learn-ParallelProgram)
 
-### (18) 分布式系统
+### (24) 分布式系统
 
-### (19) 统计学
+### (25) 计算机体系架构，操作系统
 
-### (20) 数据可视化
-matplotlib
+### (26) 代码风格与OOP设计
 
-### (21) 计算机体系架构，操作系统
-
-### (22) 代码风格与OOP设计
-
-### (23) Java, C/C++
+### (29) Java, C/C++
 
 
 ## 2. English part
@@ -409,15 +447,15 @@ matplotlib
 
 Dive into python3及中文版, 2009 (python3.0, python3.1)
 
+Fluent python及中文版, 2015 (python3.4, python3.5)
+
+Introduction to algorithms (CLRS)及课程, 2017
+
 修改、标注、总结syntac_model_deco
 
 修改、标注、总结release_kg
 
 修改、标注、总结word_vec_deco2
-
-Fluent python及中文版, 2015 (python3.4, python3.5)
-
-Introduction to algorithms (CLRS)及课程, 2017
 
 The hitchhiker's guide to python, 2016
 
@@ -431,13 +469,16 @@ Harnessing Deep Neural Networks with Logic Rules, 2016
 
 Quepy Documentation, 2017
 
+[quepy](https://github.com/machinalis/quepy)
+
 Rasa: Open Source Language Understanding and Dialogue Management, 2017
 
 强化学习在阿里的技术演进与业务创新, 2017
 
 Learning scrapy, 2016
 
-[quepy](https://github.com/machinalis/quepy)
+访谈：关于技术管理与技术领导，2018-04-30，余晟以为微信号
+
 
 ## 4. Core projects
 
@@ -454,6 +495,8 @@ CubeGirl/SourceCode/Daka/chatbot/logic/knowledge_graph/entity_lookup
 ### Others:
 
 [arfu2016/DuReader](https://github.com/arfu2016/DuReader)
+
+arfu2016/DuReader/tf-hub2
 
 [codelucas/newspaper](https://github.com/codelucas/newspaper)
 
