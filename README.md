@@ -110,6 +110,10 @@ GAN model
 
 ### (9) parsing，句法分析
 
+梅西的身高，梅西的体重
+
+阿森纳的队长，梅西的女友
+
 ### (10) classifier
 
 ### (11) decoder: a special classifier
