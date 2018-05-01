@@ -509,7 +509,7 @@ arfu2016/DuReader/tf-hub2
 
 ## 5. Products
 
-### 海外医疗、国内医疗
+### 海外医疗、国内医疗：非结构化数据，可能有成交
 
 [搜狗明医](http://mingyi.sogou.com/)
 
@@ -520,5 +520,9 @@ arfu2016/DuReader/tf-hub2
 [海外权威医疗网站](http://mingyi.sogou.com/fuwu/pc/authoritysite)
 
 
-### 海外看球、国内看球
+### 海外看球、国内看球：结构化数据
+
+### Google: talk to books -- 非结构化数据
+
+### 本轮联赛战报，下轮联赛前瞻 -- 非结构化数据
 
