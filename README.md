@@ -506,3 +506,19 @@ arfu2016/DuReader/tf-hub2
 
 [Rasa-core](https://github.com/RasaHQ/rasa_core)
 
+
+## 5. Products
+
+### 海外医疗、国内医疗
+
+[搜狗明医](http://mingyi.sogou.com/)
+
+[疾病药品搜索](http://mingyi.sogou.com/mingyi?query=%E7%B3%96%E5%B0%BF%E7%97%85%E6%96%B0%E8%8D%AF&ie=utf8&fr=common_nav)
+
+[医疗信息英文翻译](http://mingyi.sogou.com/fuwu/pc/vr/landresult/30010139?query=%E7%B3%96%E5%B0%BF%E7%97%85%E6%96%B0%E8%8D%AF)
+
+[海外权威医疗网站](http://mingyi.sogou.com/fuwu/pc/authoritysite)
+
+
+### 海外看球、国内看球
+
