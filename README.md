@@ -510,6 +510,31 @@ arfu2016/DuReader/tf-hub2
 
 [Rasa-core](https://github.com/RasaHQ/rasa_core)
 
+英文词向量：
+
+[nlp/nlp_models/google_retrain/](https://github.com/arfu2016/nlp/tree/master/nlp_models/google_retrain)
+
+[nlp/nlp_models/retrain_new_vocabulary/](https://github.com/arfu2016/nlp/tree/master/nlp_models/retrain_new_vocabulary)
+
+### future:
+
+1.中文词向量的拟合与评估
+
+中文文本只取前面一部分字节，类似text8
+
+文本先分词，然后只保留中文字符
+
+用于编码文本的二进制文件转换为utf-8编码文本的二进制文件（同一编码的二进制文件就是文本文件）
+
+gensim中几个sentence类的输出格式的总结
+
+利用gensim把中文文本用于word2vec拟合
+
+2.中文句向量的计算
+
+3.中文句子或句群相似度的计算，用非参方法进行分类
+
+4.中文句向量用于聚类和分析
 
 ## 5. Products
 
@@ -529,4 +554,8 @@ arfu2016/DuReader/tf-hub2
 ### Google: talk to books -- 非结构化数据
 
 ### 本轮联赛战报，下轮联赛前瞻 -- 非结构化数据
+
+### 舆情跟踪与分析（词向量、句向量用于聚类，句向量构建舆情树），用于金融投资，用于选举和政治反馈，用于企业公关部门
+
+### 根据一个人的阅读的文字把一个人的思想观念向量化，人向量用于聚类，根据聚类结果推荐阅读：补短板以及加深度
 
