@@ -388,6 +388,12 @@ coursera算法课
 
 #### Search algorithm
 
+应用：
+
+1. 在查阅一个词在word2vec中是否存在，或者查找vector的时候，就要用到search algorithm。当然，不在乎内存的话，一般是把word2vec的vocabulary用dict或者set来表示，查找的时候就是哈希查找，最省时间。
+
+2. 在字符串中查找正则表达式，所用的Search algorithm是字符串的Search algorithm，是列表的Search algorithm的变体。
+
 [bisect](https://docs.python.org/3/library/bisect.html): binary search的模块，查找一个词，O(log(n))时间复杂度，n是list的长度
 
 list查找一个词的话，线性时间复杂度
@@ -407,6 +413,56 @@ list查找多个词的话，可以把多个词放在set里边，扫描list；也
 [re3 0.2.23](https://pypi.python.org/pypi/re3/0.2.23)
 
 #### Sort algorithm
+
+应用：
+
+在search algorithm中，bianry search是如此有用，但前提是，the sequence is sorted. 在这种情况下，排序算法变得非常有用。数据库软件和搜索引擎中的indexing过程，本质上就是排序的过程（比如，建立binary tree和排序本质上并没有大的不同），排序之后，查找就快的多了。
+
+*shellsort*:
+
+希尔排序使小规模数据排序的最优选择。
+
+Why are we interested in shellsort?
+
+Useful in practice. Fast unless array size is huge (used for small subarrays). --bzip2, /linux/kernel/groups.c
+
+Tiny, fixed footprint for code (used in some embedded systems). --uClibc
+
+Shellsort overview
+
+Idea. Move entries more than one position at a time by h-sorting the array.
+
+How to h-sort an array? Insertion sort, with stride length h.
+
+Why insertion sort?
+
+在局部排序时，h-sorting是前面排好之后才去排后边，也就是说array已经部分有序了，在部分有序的情况下，insertion sort的表现是最好的，超过merge sort.
+
+Proposition. A g-sorted array remains g-sorted after h-sorting it. (h < g)
+
+which increment sequence to use?
+
+N/2, N/4, N/8, ..., 1
+
+3x + 1. 1, 4, 13, 40, 121, 364, ... (OK. Easy to compute.)
+
+Shellsort: analysis
+
+Proposition. The worst-case number of compares used by shellsort with the 3x+1 increments is O(N^3/2).
+
+Property. Number of compares used by shellsort with the 3x+1 increments is at most by a small multiple of N times the # of increments used.
+
+所以，对于小规模数据排序，3x+1 increments的个数是很小的，Number of compares也就不多。
+
+代码解析：
+
+第一步，选择初始的increment，比如N//2
+
+第二步，第一重循环，要求increment>0, 选择初始的排序关注点i（比如increment），increment的变化：increment //= 2
+
+第三步，第二重循环，要求排序关注点i小于列表长度N，选择初始的排序比较点j（比如i-increment），记录排序关注点的值，移动排序关注点的值（移动到哪个位置由insertion sort决定），增加排序关注点i的值，每次加1.
+
+第四步，第三重循环，insertion sort，要求排序比较点j>=0，并且排序比较点的值大于记录好的排序关注点的值（否则没有insertion sort的必要），在循环内，把排序比较点的值右移，然后把排序比较点的index（j）左移。
 
 [Timsort](https://en.wikipedia.org/wiki/Timsort): a hybrid stable sorting algorithm, derived from merge sort and insertion sort
 
