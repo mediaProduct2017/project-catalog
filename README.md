@@ -392,7 +392,7 @@ coursera算法课
 
 1. 在查阅一个词在word2vec中是否存在，或者查找vector的时候，就要用到search algorithm。当然，不在乎内存的话，一般是把word2vec的vocabulary用dict或者set来表示，查找的时候就是哈希查找，最省时间。
 
-2. 在字符串中查找正则表达式，所用的Search algorithm是字符串的Search algorithm，是列表的Search algorithm的变体。
+2. 在字符串中查找正则表达式或者某个子串，所用的Search algorithm是string search algorithm (or called substring search algorithm)，是列表的Search algorithm的变体。
 
 [bisect](https://docs.python.org/3/library/bisect.html): binary search的模块，查找一个词，O(log(n))时间复杂度，n是list的长度
 
@@ -416,7 +416,7 @@ list查找多个词的话，可以把多个词放在set里边，扫描list；也
 
 应用：
 
-在search algorithm中，bianry search是如此有用，但前提是，the sequence is sorted. 在这种情况下，排序算法变得非常有用。数据库软件和搜索引擎中的indexing过程，本质上就是排序的过程（比如，建立binary tree和排序本质上并没有大的不同），排序之后，查找就快的多了。
+在search algorithm中，bianry search是如此有用，但前提是，the sequence is sorted. 在这种情况下，排序算法变得非常有用。数据库软件中的indexing过程(搜索引擎中的indexing过程，因为预处理的是文本，不是列表，所以有所不同，一般是建立某种suffix tree)，本质上就是排序的过程（比如，建立binary tree和排序本质上并没有大的不同），排序之后，查找就快的多了。
 
 *shellsort*:
 
@@ -469,6 +469,18 @@ Property. Number of compares used by shellsort with the 3x+1 increments is at mo
 The sorting algorithm used in sorted and list.sort is Timsort, and adaptive algorithm that switches from insertion sort to merge sort strategies, depending on how ordered the data is. This is efficient because real-world data tends to have runs of sorted items.
 
 [fluent python timsort](https://books.google.com.hk/books?id=kYZHCgAAQBAJ&pg=PA66&lpg=PA66&dq=fluent+python+timsort&source=bl&ots=iswgRxyRQf&sig=aTSU_VLmoX8meNk3Hom26vMvX4c&hl=en&sa=X&redir_esc=y&hl=zh-CN&sourceid=cndr#v=onepage&q=fluent%20python%20timsort&f=false)
+
+### string searching algorithm
+
+[wikipedia string searching algorithm](https://en.wikipedia.org/wiki/String_searching_algorithm)
+
+对于普通的substring searching algorithm，最常用的是Boyer–Moore string search algorithm，时间复杂度best Ω(n/m),
+worst O(mn)，其中m be the length of the pattern, n be the length of the searchable text。
+
+在python中，string的in operator用的就是Boyer–Moore string search algorithm的一个变种，严格的说，it's a combination of Boyer-Moore and Horspool.
+
+[Python string 'in' operator implementation algorithm and time complexity](https://stackoverflow.com/questions/18139660/python-string-in-operator-implementation-algorithm-and-time-complexity)
+
 
 ### (21) 文本处理的python技能
 
