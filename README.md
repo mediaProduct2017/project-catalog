@@ -402,15 +402,6 @@ set或者dict查找一个词的话，O(1)时间复杂度，用的是hash table�
 
 list查找多个词的话，可以把多个词放在set里边，扫描list；也可以扫描list，使用collections中的Counter()，去挨个计数list中的词；这样的话，扫描list一次，就可以把想要的结果全部拿到，时间复杂度是O(n)，与要查找的词的个数无关
 
-对于正则表达式的查找，如果string的长度为L的话，时间复杂度是O(L)
-
-如果是多个正则表达式的查找的话，比如n个，按一般方法，时间复杂度是O(nL)，但是google开发出的[re2](https://github.com/google/re2)，时间复杂度可以达到O(L)，与n无关。
-
-[Of running multiple regexp at once](https://fulmicoton.com/posts/multiregexp/)
-
-[facebook/pyre2](https://github.com/facebook/pyre2)
-
-[re3 0.2.23](https://pypi.python.org/pypi/re3/0.2.23)
 
 #### Sort algorithm
 
@@ -472,7 +463,23 @@ The sorting algorithm used in sorted and list.sort is Timsort, and adaptive algo
 
 ### string searching algorithm
 
+对于正则表达式的查找，如果string的长度为L的话，较好情况下的时间复杂度是O(L)，最坏情况下的时间复杂度是指数级别的。
+
+如果是多个正则表达式的查找的话，比如n个，按一般方法，时间复杂度是O(nL)，但是google开发出的[re2](https://github.com/google/re2)，时间复杂度可以达到O(L)，与n无关。
+
+[Of running multiple regexp at once](https://fulmicoton.com/posts/multiregexp/)
+
+[facebook/pyre2](https://github.com/facebook/pyre2)
+
+[re3 0.2.23](https://pypi.python.org/pypi/re3/0.2.23)
+
 [wikipedia string searching algorithm](https://en.wikipedia.org/wiki/String_searching_algorithm)
+
+对于子串查询，brute force的解法就是searchable text逐个字符放到列表里，共n个字符，要查的子串有m个字符的话，逐个字符到列表里查询，这样时间复杂度就是O(mn)。或者看n个字符的m-gram，这样所需要的比较就是O(n)，只是有额外的overhead.
+
+一般来说，不需要正则表达式的话，就不要用正则表达式查询，就用子串查询即可。正则表达式查询的速度相对较慢，因为正则不只要做匹配，还要做group-capturing和back-referencing。This implementation has exponential time complexity in worst case.
+
+[substring match faster with regular expression?](https://stackoverflow.com/questions/3303355/substring-match-faster-with-regular-expression)
 
 对于普通的substring searching algorithm，最常用的是Boyer–Moore string search algorithm，时间复杂度best Ω(n/m),
 worst O(mn)，其中m be the length of the pattern, n be the length of the searchable text。
@@ -505,6 +512,12 @@ conda, git, jupyter notebook, pycharm
 ### (26) 代码风格与OOP设计
 
 ### (29) Java, C/C++
+
+### (30) 线性代数
+
+矩阵的本质是线性变换，也就是旋转和伸缩。一个矩阵乘以一个列向量，就是对这个列向量进行线性变换。一个矩阵A乘以一个矩阵B，就是把矩阵B分拆成n个列向量，然后对这n个列向量进行线性变换，线性变换的方式是由矩阵A提供的。变换的旋转方向是由矩阵A的特征向量决定的，变换的伸缩方式是由各个特征向量方向上的特征值决定的。
+
+[learn-linear-algebra](https://github.com/mediaProduct2017/learn-linear-algebra)
 
 
 ## 2. English part
