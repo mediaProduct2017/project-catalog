@@ -371,6 +371,8 @@ dialogue manager以及context agent，用于构建多轮对话管理系统，构
 
 ### (17) 深度学习
 
+在深度学习中，模型的参数数目略大于独立方程数（主要取决于带标签的样本数）是有必要的，因为并不是所有的信息都在训练样本中包含了，所以，给待拟合的参数多一些自由度（也就是说，并不是唯一的拟合方式），反而可能拟合出更加正确的模型。至于到底是选择哪个模型（比如hyper parameter的选择），是在validation过程中决定的。
+
 [Deep Learning for Cancer Detection with Sebastian Thrun](https://classroom.udacity.com/nanodegrees/nd101/parts/ee36fc70-6f3e-4a9f-a5b1-fb6d03d40de4/modules/ff4ffa88-13e9-4a64-a280-c793a6cb0064/lessons/54e18898-2666-445d-ba5c-ecab62a61d00/concepts/c225888e-8e82-4020-a641-acdda4008fa5)
 
 ### (18) 统计学
