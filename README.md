@@ -383,6 +383,17 @@ dialogue manager以及context agent，用于构建多轮对话管理系统，构
 
 两个向量的相关系数就是用它们的协方差除以二者标准差的乘积，也就是person correlation coefficient, 1表示完全正相关，-1表示完全负相关，0表示二者独立. 对应的p-value的值就是看认定相关系数不等于0而犯错的概率，这个概率越小，越能认为相关系数不等于0.
 
+Let's summarize what we just learned. These are some generally accepted reasons that quantitative analysts use log returns:
+
+Log returns can be interpreted as continuously compounded returns.
+Log returns are time-additive. The multi-period log return is simply the sum of single period log returns.
+The use of log returns prevents security prices from becoming negative in models of security returns.
+For many purposes, log returns of a security can be reasonably modeled as distributed according to a normal distribution.
+When returns and log returns are small (their absolute values are much less than 1), their values are approximately equal.
+Logarithms can help make an algorithm more numerically stable.
+
+Stepping back, it may not be immediately obvious why all these attributes are benefits. Don't worry about this. As you progress in this course and beyond, you will see more applications of returns and log returns in trading strategies and algorithms and you'll be able to better appreciate why they are used.
+
 ### (19) 数据可视化
 matplotlib
 
